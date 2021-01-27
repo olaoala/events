@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Schedule an Event | Hephzibah Eko</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="images/hlogo.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Custom styles -->
+    <style>
+    	body, html {
+    		font-family: "Sen",sans-serif;
+    	}
+    	
+    	.navbar-brand {
+    		font-size: 16px;
+			text-transform: uppercase;
+    	}
+    	/* Default height for small devices */
+        #intro {
+          	height: 400px;
+          	/* Margin to fix overlapping fixed navbar */
+          	margin-top: 58px;
+        }
+
+        #bg-intro {
+        	height: 300px;
+        }
+
+        .space::before {
+        	position: absolute;
+			content: "";
+			width: 50px;
+			height: 2px;
+			background: #fff;
+			top: 0;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+			box-sizing: border-box;
+        }
+
+        .space {
+        	font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 35px;
+			text-transform: uppercase;
+			color: #fff;
+			display: inline-block;
+			position: relative;
+			padding-left: 80px;
+			letter-spacing: 0.05em;
+        }
+
+        .sch {
+        	border-radius: 0px;
+        	margin: 0px;
+        }
+
+        .form-control {
+		    border: 1px solid #e5e6e9;
+		    border-radius: 0px;
+		    height: 48px;
+		    padding-left: 18px;
+		    font-size: 13px;
+		    background: transparent;
+		}
+
+		textarea.form-control {
+			height: 150px;
+		}
+
+		.btn-floating {
+        	background-color: #333333;
+        	border: none;
+        	color: #fff;
+        	box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+        }
+
+       	
+       	/* GO TO TOP */
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 30px;
+			right: 10px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			color: #fff;
+			cursor: pointer;
+			background-color: rgb(185,141,59);
+			padding: 10px 20px 10px 20px;
+		}
+
+		#myBtn:hover {
+			background-color: #333333;
+		  	color: #fff;
+		}
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 576px) {
+          	#intro {
+            	height: 600px;
+          	}
+        }
+    </style>
+</head>
+<body>
+
+	<header>
+
+  		<!-- Navbar -->
+  		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    		<div class="container">
+      			<!-- Navbar brand -->
+      			<a class="navbar-brand" href="index.html">
+      				<img src="images/hlogo.png" width="70">
+        			<strong><img src="" class="" width="">Hephzibah Eko</strong>
+        			<!-- <strong>Hephzibah Events</strong> -->
+      			</a>
+      			
+      			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        			<span class="navbar-toggler-icon"></span>
+      			</button>
+      			
+      			<div class="collapse navbar-collapse" id="navbarExample01">
+		            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+		              	<li class="nav-item active">
+		                	<a class="nav-link" aria-current="page" href="index.html">Home</a>
+		              	</li>
+		              	
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="about.html">About</a>
+		              	</li>
+		              	
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="services.html">Services</a>
+		              	</li>
+
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="">Our Process</a>
+		              	</li>
+		            </ul>
+
+		            <ul class="navbar-nav nav-flex-icons">
+
+		              	<li class="nav-item">
+		              		<a class="btn btn-dark btn-lg sch m-2" href="book.html" role="button"rel="nofollow" style="box-shadow: none; background-color: rgb(185,141,59);">Schedule an event</a>
+		              	</li>
+
+		            </ul>
+      			
+      			</div>
+    		</div>
+  		</nav>
+
+  		
+  		<!-- Background image -->
+  		<div id="bg-intro" class="p-5 bg-image text-center text-white shadow-1-strong" style="background-image: url('images/bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+  			<h1 class="mt-5 pt-5">Schedule an Event</h1>
+  			<h6>meet the team</h6>
+
+  		</div>
+
+	</header>
+
+	
+	<main>
+
+        <section>
+        	<div class="container text-center my-5">
+	          	<p class="text-center pt-5">For general business, press, and career inquiries</p>
+	          	<span>hello@hephzibaheko.com</span> <br>
+	          	<span>+234 123 4567 890</span>
+	          	<br><br>
+	          	<small class="pt-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</small>
+
+	          	<form>
+		          	<div class="row">
+		            	<div class="col-md-6 gx-5 mt-5">
+		              		<div class="form-group">
+		              			<input type="text" name="" class="form-control" placeholder="Enter your name">
+		              		</div>
+		            	</div>
+
+			            <div class="col-md-6 gx-5 mt-5">
+			              	<div class="form-group">
+		              			<input type="email" name="" class="form-control" placeholder="Email">
+		              		</div>
+			            </div>
+
+		          	</div>
+
+		          	<div class="row">
+		            	<div class="col-md-6 gx-5 mt-5">
+		              		<div class="form-group text-left">
+  								<input class="" type="checkbox"	value="">
+  								<label class="form-check-label">Wedding</label>
+							</div>
+
+							<div class="form-group text-left">
+  								<input class="" type="checkbox"	value="">
+  								<label class="form-check-label">Bridal Showers</label>
+							</div>
+
+							<div class="form-group text-left">
+  								<input class="" type="checkbox"	value="">
+  								<label class="form-check-label">Event Planning & Design</label>
+							</div>
+
+							<div class="form-group text-left">
+  								<input class="" type="checkbox"	value="">
+  								<label class="form-check-label">Conferences & Workshop Planning</label>
+							</div>
+
+							<div class="form-group text-left">
+  								<input class="" type="checkbox"	value="">
+  								<label class="form-check-label">Company Picnics, Banquets and Award Ceremonies</label>
+							</div>
+
+							<div class="form-group text-left">
+  								<input class="" type="checkbox"	value="">
+  								<label class="form-check-label">Others</label>
+							</div>
+		            	</div>
+
+		          	</div>
+
+		          	
+		          	<div class="row">
+			            <div class="col-md-6 gx-5 mt-5">
+			              	<div class="form-group">
+		              			<input type="date" name="" class="form-control">
+		              		</div>
+			            </div>
+
+		          	</div>
+
+
+		          	<div class="row">
+		            	<div class="col-md-12 gx-5 mt-5">
+		              		<div class="form-group">
+		              			<textarea class="form-control" placeholder="Enter Message" rows="15"></textarea>
+		              		</div>
+		            	</div>
+
+		          	</div>
+
+
+
+		          	<div class="text-center mt-5">
+		          		<button type="submit" class="btn btn-light btn-lg sch m-2" style="background-color: rgb(185,141,59); color: #ffffff;">Submit</button>
+		          	</div>
+
+		        </form>
+
+	        </div>
+
+	    </section>
+
+  	</main>
+
+
+  	<div class="back-to-top">
+		<a onclick="topFunction()" id="myBtn" title="Go to top">
+			<i class="fas fa-long-arrow-alt-up"></i>
+		</a>
+	</div>
+
+  	<footer class="page-footer font-small mdb-color pt-5">
+
+  		<div class="container text-md-left">
+
+		    <div class="row text-md-left mt-3 pb-3">
+
+		      	<div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+		        	<h6 class="text-uppercase mb-4 font-weight-bold">Hephzibah Eko</h6>
+		        	<p>Hephzibah Eko brings to you a new breathe of air in the event planning market; by combining latest fashioned values, going the extra mile and using cutting edge technology.</p>
+		      	</div>
+
+		      	<!-- <hr class="w-100 clearfix d-md-none"> -->
+
+		      	<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+			        <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+			        
+			        <p><a href="#!" style="color: #4f4f4f;">Wedding</a></p>
+
+			        <p><a href="#!" style="color: #4f4f4f;">Bridal Showers</a></p>
+
+			        <p><a href="#!" style="color: #4f4f4f;">Event Planning & Design</a></p>
+
+			        <p><a href="#!" style="color: #4f4f4f;">Conferences</a></p>
+
+			        <p><a href="#!" style="color: #4f4f4f;">Company Picnics</a></p>
+			        
+		      	</div>
+
+		      	<!-- <hr class="w-100 clearfix d-md-none"> -->
+
+		      	<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+			        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+			        
+			        <p><i class="fas fa-home mr-3"></i> Lagos, <i class="nigeria flag"></i></p>
+			        
+			        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+			        
+			        <p><i class="fas fa-phone mr-3"></i> + 234 123 4567 890</p>
+		      	
+		      	</div>
+
+		    </div>
+
+    		<hr>
+
+		    <div class="row d-flex align-items-center">
+
+		      	<div class="col-md-7 col-lg-8">
+
+		        	<p class="text-center text-md-left">© 2020 Copyright:
+		          		<a href="https://mdbootstrap.com/">
+		            		<strong style="color: #4f4f4f;"> HephzibahEko.com</strong>
+		          		</a>
+		        	</p>
+
+		      	</div>
+
+		      	<div class="col-md-5 col-lg-4 ml-lg-0">
+
+			        <div class="text-center text-md-right">
+			          	<ul class="list-unstyled list-inline">
+			            	<li class="list-inline-item">
+			              		<button class="btn-floating btn-sm  mx-1"  style="">
+			                		<i class="fab fa-facebook-f"></i>
+			              		</button>
+			            	</li>
+			            	
+			            	<li class="list-inline-item">
+			              		<button class="btn-floating btn-sm mx-1">
+			                		<i class="fab fa-twitter"></i>
+			              		</button>
+			            	</li>
+			            	
+			            	<li class="list-inline-item">
+			              		<button class="btn-floating btn-sm mx-1">
+			                		<i class="fab fa-instagram"></i>
+			              		</button>
+			            	</li>
+			          	</ul>
+			        </div>
+
+		      	</div>
+
+		    </div>
+
+		 </div>
+
+	</footer>
+
+    
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  	<!-- Bootstrap tooltips -->
+  	<script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- MDB -->
+  	<script type="text/javascript" src="js/mdb.min.js"></script>
+  	<!-- Custom scripts -->
+  	<script type="text/javascript" src="js/script.js"></script>
+
+  	<script type="text/javascript">
+    	// Animations initialization
+    	new WOW().init();
+  	</script>
+
+</body>
+</html>

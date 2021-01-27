@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Sarabun:400,500,600,700,800|Sen:400,700&display=swap");
+
+body, html {
+    font-family: "Sen",sans-serif;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Default height for small devices */
+#intro {
+    height: 400px;
+    /* Margin to fix overlapping fixed navbar */
+    margin-top: 58px;
+}
+
+.welcome-section {
+    margin-left: 50px;
+}
+
+.space::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    top: 0;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+}
+
+.space {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    padding-left: 80px;
+    letter-spacing: 0.05em;
+}
+
+.sch {
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.btn-floating {
+    background-color: #333333;
+    border: none;
+    color: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+.page-footer {
+    margin-top: 50px;
+}
+
+/* GO TO TOP */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(185,141,59);
+    padding: 10px 20px 10px 20px;
+}
+
+#myBtn:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
+
+/* Height for devices larger than 576px */
+@media (min-width: 576px) {
+    #intro {
+        height: 600px;
+    }
+
+}
+
+/* Mobile screen */
+@media only screen and (max-width:768px) {
+    .nav-item {
+        margin-left: 0px;
+    }
+
+    #intro {
+        height: 500px;
+    }
+
+    .welcome-section {
+        margin-left: 20px;
+        padding-right: 40px;
+    }
+
+    .welcome-text {
+        font-size: 40px;
+    }
+
+    .page-footer {
+        margin-top: 50px;
+    }
+
+}
